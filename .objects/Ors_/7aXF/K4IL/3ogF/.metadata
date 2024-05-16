@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CREATE NEW QUOTE",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "3ogF84x5TU2D02Z47xAceQ",
+  "Reference": "H4z47meBBEGgAL5h77tv3Q/3ogF84x5TU2D02Z47xAceQ",
+  "ParentRef": "H4z47meBBEGgAL5h77tv3Q/K4ILgWcm7k6xV7EZYbC8hA",
+  "Created": "2024-05-09T03:46:56.0591074Z",
+  "Updated": "2024-05-09T03:46:56.0591074Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

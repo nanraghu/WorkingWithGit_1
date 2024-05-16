@@ -1,0 +1,771 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CreateNewQuote" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="852,8001.333333333333" sap2010:WorkflowViewState.IdRef="CreateNewQuote_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CreateNewQuote" sap:VirtualizedContainerService.HintSize="862,7936.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NTypeInto_3</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_Output" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="800,136.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="800,5746.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Create New Quote" sap:VirtualizedContainerService.HintSize="738,601.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="4c8f670b-34f5-4c08-99a6-7f2ca94d528c" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,310" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CREATE NEW QUOTE'" sap:VirtualizedContainerService.HintSize="354,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c8f670b-34f5-4c08-99a6-7f2ca94d528c" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/dashboard" CVScreenId="7209b963-bd09-4cd4-a96e-b26e0b459053" ContentHash="hniYRpnqkkaK-KquPgLfPw" CvElementArea="989, 744, 778, 49" CvTextArea="1284, 759, 190, 18" CvTextArgument="CREATE NEW QUOTE" CvType="Button" DesignTimeRectangle="992, 746, 777, 47" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-YTD' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-YTD' tag='BUTTON' type='' class='btn btn-primary w-100 mt-4 dashboard-btn' aaname=' CREATE NEW QUOTE ' check:innerText='CREATE NEW QUOTE' /&gt;" Guid="919818bb-57ea-4f82-b31c-752af6d1034b" InformativeScreenshot="a75f5a515fe97c1245ae67dd5e48bc1c.png" Reference="H4z47meBBEGgAL5h77tv3Q/3ogF84x5TU2D02Z47xAceQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="7209b963-bd09-4cd4-a96e-b26e0b459053" CvTextArea="1482, 250, 111, 16" CvTextArgument="DASHBOARD" CvType="Text" DesignTimeRectangle="1475, 237, 128, 46" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='navbarCollapse' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navbarCollapse' tag='A' type='' class='nav-link active' aaname=' DASHBOARD(current)' check:innerText='DASHBOARD&amp;#xD;&amp;#xA;(CURRENT)' /&gt;" Guid="0a0f808c-eebb-4d46-9161-4ef50b231f4e" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Label 'New Quotes'" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="0908fd13-b90e-4abf-85e6-fe9673a2339a" CvTextArea="201, 475, 138, 22" CvTextArgument="New Quotes" CvType="Text" DesignTimeRectangle="196, 474, 143, 27" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' New Quotes' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' New Quotes' tag='SPAN' type='' class='' check:innerText='New Quotes' /&gt;" Guid="c1831905-6681-4782-bc48-4dbf8a2f43bb" InformativeScreenshot="103a700c2c66ddc6dce9e0fbc984c78f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="re7gZGDQCUWu2iFeOekMXA" IconBase64="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" InformativeScreenshot="d6072985086c409c5ef70839c26f8c83.jpg" Reference="H4z47meBBEGgAL5h77tv3Q/hjPveKQWR0OCA4LcscFvjA" Selector="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" Title="Houston Aviation - NEW VER" Url="https://hcaazqa.hcc.com/uw/dashboard" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="738,5025.333333333333" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,4875.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="642,4790.666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="InputSheet\TestDataSheet.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,4487.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ExcelReadRange AddHeaders="True" DataTable="[DT_Output]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="546,92" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" SheetName="Data">
+                        <ui:ExcelReadRange.Range>
+                          <InArgument x:TypeArguments="x:String">
+                            <Literal x:TypeArguments="x:String" Value="" />
+                          </InArgument>
+                        </ui:ExcelReadRange.Range>
+                      </ui:ExcelReadRange>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome: Houston Aviation - NEW VER" sap:VirtualizedContainerService.HintSize="546,4310.666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="IfNotOpen" ScopeGuid="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,4068.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,3981.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,3788" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Children" />
+                                        <Variable x:TypeArguments="x:String" Name="RadioBtnState" />
+                                      </Sequence.Variables>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Policy Title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[Row(0).ToString]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="12b6c7bf-7c3d-4a48-af10-fe152f814f1f" ContentHash="0q0oqRBiy06_QwNqjetJjA" CvElementArea="562, 770, 393, 48" CvType="InputBox" DesignTimeRectangle="565, 773, 388, 43" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='inputpolicydesc' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputpolicydesc' tag='INPUT' type='text' class='form-control ng-dirty ng-touched ng-invalid' aaname='' /&gt;" Guid="fe40dc3d-e231-461e-9242-b2c20b071f9c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYgAAAAvCAYAAAD5LV3EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAECSURBVHhe7dXBbcQwEARB5x+bnsqDYAQ0eDjRfnQGqgLmsdgA+mcBQBAIAJJAAJBOIOac677vdV2XmZm9cLsBuwWPE4j9GGN8LwDeZjdgt+BxArHrAcC7/W+BQABwCAQASSAASAIBQBIIAJJAAJAEAoAkEAAkgQAgCQQASSAASAIBQBIIAJJAAJAEAoAkEAAkgQAgCQQASSAASAIBQBIIAJJAAJAEAoAkEAAkgQAgCQQASSAASAIBQBIIAJJAAJAEAoAkEAAkgQAgCQQASSAASAIBQBIIAJJAAJAyEPd9rzHG9wLgbXYDdgseJxBzzs9j18PMzN633YDdgscJBAD8WesXe+vRt05ZXBsAAAAASUVORK5CYII=" InformativeScreenshot="ec844619d693fdfcd00cd6c41be72610.png" IsResponsive="True" Reference="H4z47meBBEGgAL5h77tv3Q/u_3gJfrOmUOBPzuUORX-SA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="12b6c7bf-7c3d-4a48-af10-fe152f814f1f" CvTextArea="564, 747, 88, 19" CvTextArgument="Policy Title *" CvType="Text" DesignTimeRectangle="565, 741, 88, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Policy Title' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Policy Title' tag='LABEL' type='' class='' check:innerText='Policy Title' /&gt;" Guid="46dda540-470f-4798-ae68-1bc68a178dcb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAiCAYAAADSx77pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAASKSURBVGhD7Zi/a9tMGMffv0WbwIMhQ+CFNxleosnQwZChhvLWEHgDhfrduhRnMPbkTKZDPMUUiggUXCi4k18I6B0CKgQ0vNhDUIYSDX5Ri1ulGL7vc6eTrV+WrdYRIegDGk6+3D33udNzd/kFOZmSC8+YXHjG5MIzJheeMbnwjMmFZ0wuPGNy4RmTC8+YXHjG5MLvBAtfGh1MZ6Lo406E6y0J0lOVuhVcD9Fu9GBMRTlrpgZ6jTaG16K8jE8qqpKE5oUop8aBc+NgBh32VhWfb4DvNxZufeIDwrko6nDxyNjer6H7z1zdWoSF2x9eQKa22rp4sTF0NAPxhp8m1SD+7UKhcvWtbxxXA7RfkxhR5Pys8FsDn//axuQ3GZMtyX3+qOMLifeICveJcmwT+skhipKCjiFerkFkhTNiPq9N4Exs2OIZHlG/R8N52Z44ohYR7v+iGY3xp1e4y9dTxZX9coBb8c4jUbiLCfWxhN1XQePOtQHtXIM+DqwRTqSdmcMFOOFB03vzUqN2dIwm4p0TEuXB24h574P324r5jEL9O7YN47QC6TGlOf/EJAi3x7obp5UcA276+O93SiemSatdgf0xWH8N4TYGz30DmZnoPytCKmyj9KgEhWZS3u8E8nOkHbaapCrUT6JMOJddVNjf/lqidhT6ioqofaC/uOqhLJXQG4uKgtFpCdLzQTAFhFgqPCDSgvqU6lE5knrihFP+7+zLKO5VcPhnhcYro3pmih9jmNn4RnmcM40ustXC7SHqBQm192yoDvRjBdIeBegJpglQD2TIPhkrhU8GqBUo8De+wC0LFg/OpgkNf1Ej9B5JqP/9gys8RqR1Vo2ONVKPLTYZCrU575n7KKN3JcopiQrfqaJ+3EabPY0ayrQKi8/6MJkMhzqjgCIDv+xg17cqVwnnq3WHvopwihE453XI/t/5qq9jmOx788LHPZSkQ/S9dCfQGqENOAXJwk9UaP4czQOqQA0fr8REeIGuEs5/b2huIY4ZfcY78rw983UZ8pG2WGVL2LhwHncRCqVOlj69h6XR6tmmhIeD8MMDiuZX2JQi0gp/OUwUaLzaFZJN9Moy6uerdN+VcPqy5qce37M6nFjSCZ/RuZfy+eG74NbFU0BYaIJwPthCHVpS0CyNsDpjkrCqrmDjwnl5F51LUd4A6YQTJgUqF0iet2nYGpp7EpTjxcaiH8uJwjF1N2KFzszuRknNGCrUC79VtnnSxnpA/cVJjCGNcPt9jU/6kG3+3l5h9UP16JDQYocEqufFzo+yo8TTUhKphbMgjJMqtkmYe6QqotxaiGO4K15CxTuFhIUzrvp4UaKJ4W3Qs1VB59wKpBm3nUUuX0Ua4XB0dOb9e2mSpS9WbkLzxjOzMGyV6dgq4mS374MujDW+uDgCwlMhLhPLchm7XKyT53i9ZRcamii5QEdQ32RuGn5T9f+PZ9kFa8V41+XHhd814nxfPh2JFw+DeyjcxICOpPUndJv1X7AeCPdPuGNBP+ui984I7AsPhfubUh4oufCMyYVnTC48Y3LhGZMLzxTgf1rCddHioIjKAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.VerifyOptions>
+                                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          </uix:VerifyExecutionTypeIntoOptions>
+                                        </uix:NTypeInto.VerifyOptions>
+                                      </uix:NTypeInto>
+                                      <uix:NSelectItem DisplayName="Select Item 'Classification'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[Row(1).ToString]" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="12b6c7bf-7c3d-4a48-af10-fe152f814f1f" ContentHash="tEzHAzVZPE6vd9H3Ms1WQA" CvElementArea="162, 910, 394, 47" CvType="InputBox" DesignTimeRectangle="165, 913, 389, 42" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='inputState' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputState' tag='SELECT' type='' class='form-control ng-dirty ng-valid ng-touched' aaname='Classification' /&gt;" Guid="154a1c74-ce85-4d60-84ee-e449a7e31f0c" InformativeScreenshot="cf0d5e8ee9b24c9e150311ae5fbdf4a9.png" Reference="H4z47meBBEGgAL5h77tv3Q/QcbC8C1utE-xUEFCd2udkQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="12b6c7bf-7c3d-4a48-af10-fe152f814f1f" CvTextArea="163, 886, 107, 16" CvTextArgument="Classification *" CvType="Text" DesignTimeRectangle="165, 880, 105, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Classification' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Classification' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Classification' /&gt;" Guid="d56c0e15-d64c-4300-825c-f2f255d59457" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                      <uix:NSelectItem DisplayName="Select Item 'Subclass'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[Row(2).ToString]" Version="V3">
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="19be9878-07f5-4ae2-aeca-21a1e37b4346" ContentHash="0TELXvYs40GuqG3ncQ2trw" CvElementArea="563, 863, 392, 48" CvType="InputBox" DesignTimeRectangle="565, 866, 388, 43" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='inputState' idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputState' type='' tag='SELECT' class='form-control ng-untouched ng-pristine ng-invalid' aaname='Classification' /&gt;" Guid="0141c2a2-7291-4ac0-b468-69cb88cc152d" InformativeScreenshot="94ca1b5850d21c0f259f0b766aa2e2d4.png" Reference="H4z47meBBEGgAL5h77tv3Q/90jq0c6-QkmFfCCVS30WVQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="19be9878-07f5-4ae2-aeca-21a1e37b4346" CvTextArea="562, 840, 64, 16" CvTextArgument="Subclass" CvType="Text" DesignTimeRectangle="565, 834, 73, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Subclass' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Subclass' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Subclass' /&gt;" Guid="d4853e66-bd62-48de-aadb-759251c1682e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAiCAYAAAAaq1Q/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQySURBVGhD7ZfPa9tmGMf3t+hmyMGQQ2Cw5hTDQLCDoIcaCjX0YNiIdymmUNxDUWDQXmJ6qNkgYjCETx4EMgjLIaAeAhoYdBjKISiHgChOVTB9u7l890jva0e/G7/dpfB+QNivnlfvj6+eH6++gmJtlGgSKNEkUKJJoESTQIkmgRJNAiWaBEo0CZRoEijRJFCiVfHmCG9/cfFRNNOUizaPEM3oipi4sR7ungbtgY1QtGX4P8aQgvbO5vT7l4nZDzbeLxjYmygjXla0uQ/7sY6GRgsWV9MYYHIh7LfkSxbt378tXH/bwOwbujY1upq4/ukEaffJiObtb0PbMeHMxA0WwH3VQ28ciBu344v2tJiFh+huLJiGt39G4uYNKdECWIaGzrh+mSyisM1FbXIvdmlBesPRuQvn1IUfVoQ6C+GfOdTHQ5DqUiUau/CoL/WfBmALcTPF0u6ehwV7nS3N+8MOZj9SaAY2rg0T8w/CIEiJFuFoN16ohaBywBD2g7yw/J6254q22PCjIUb3t7Cl69D1LQr5Bj2X9djgsA99g1LAjuizYWA05crlRWMXEwyMJhpfU9/vdLTICxr6EO5KaEbPtKBtGug9G6C7Q32NEbzEXmcr8vEdvRDhBP9cR8jLkc1plzY6tAltsw1z7GbePGcN0TY6sLwb1w7GHRKui8ky9L0hWloL5uubPuyKPED8L3jawicvSc07P8GA1to7FM9f0dq1NuxL3oyJZmK0OpsEWdFiIh8n+x1sxeJpTbT3HYQrqdcQLR9aCwcmFRa+SYaTJ9Tn+wn5dzmlY6RhPqx7qXnDCQmzjcEfJU/U2SQoirZkEcEb8/Bp7B6JzX2GaJln+f/2b9UFpnSMKwfWky6FZhMtCtHkxabmDQ4HMJKw7eH575TMU3FVZ1uXatEE7LhPHtfBJFn954jmYXgnK5p+4HNTCfkx2JmJFuW856fLAlCcN4Fetn88Qk9v5HIeUWdbg4xopYdZyj3bOdGyHhLATocJUSrahQWDQmQ45U13rwHNoKLDmwWyY/Aitf3SS1qcCtGWUM7rUzowz0Q7TZ3tFqxEY9MhdErM3VcOAlE5WOjBekhvZRWeDM7TeLMj+PHbpjfnvmyjmQuTZMN3erCnImNFfJxYhFVlPo9FpIp6cBMq4bGFI5Gs3Re8PxdN5MBHtI5VXzNJHct5mTui4pUKu7ioaQYsOpjX2WTIeppnJ2V9+TWg0ab0xzb81BkMlxN0KTdwewv9sQ/3QC+Ipr+YwNqNjxq8b/P+CG4u60e0mfZqrDjf9GGListOB8mzK6/OzMsLlPNzal7Kd8OH8XyU75IjThPdX31ejetsEpTntOW3Z9Wo9D0W2+sOiCvisT7xDcsqvnMLB+nbzCvWXtqnzrYGnywEiiJKNAmUaBIo0SRQokmgRJNAiSaBEk0CJdraAP8BfHTg91EWwd0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                      <uix:NSelectItem DisplayName="Select Item 'Department'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="[Row(3).ToString]" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NSelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="3">
+                                            <x:String>Select Department</x:String>
+                                            <x:String>Domestic - AVD</x:String>
+                                            <x:String>International - AVN</x:String>
+                                          </scg:List>
+                                        </uix:NSelectItem.Items>
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="011da45b-3312-404e-81cc-e2bf1cdcba19" ContentHash="4bXYsSajmUK0BGlsaZCevg" CvElementArea="961, 485, 392, 47" CvType="InputBox" DesignTimeRectangle="964, 488, 388, 43" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='inputState' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputState' type='' tag='SELECT' class='form-control ng-touched ng-dirty ng-valid' aaname='Classification' /&gt;" Guid="d0fd94c8-fb75-4350-b063-d129c7618fa6" ImageBase64="" InformativeScreenshot="9f80d80cfe822925a056be14c0a722ce.png" Reference="H4z47meBBEGgAL5h77tv3Q/yipCIrQSs0GBC8-6lSB68w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="011da45b-3312-404e-81cc-e2bf1cdcba19" CvTextArea="963, 463, 95, 18" CvTextArgument="Department #" CvType="Text" DesignTimeRectangle="964, 456, 96, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Department' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Department' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Department' /&gt;" Guid="2d94cf8a-3c56-4519-aa86-95ed188c76d1" SearchSteps="Selector, FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON searchID'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" ContentHash="fGy1dZCDxUesCLRSaSPJyQ" DesignTimeRectangle="908, 447, 45, 43" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl id='searchID' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='searchID' tag='BUTTON' type='button' class='btn btn-primary input-search' aaname='' /&gt;" Guid="d8170502-dd74-4c6b-9aa8-4d4f0a2d6439" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAvCAYAAABKQCL3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH1SURBVGhD7ZpvS4NQFIf7/t9AHEkICyGpkHAVeyEsqjW2IkPYiIIQ1h8KLIvF4td1HKettYle2TXuA+eFZ3dwn3POVXBbwz9ASojCWqfTQRRdt1+ZuOrfIHgNSaGinQjfPyYiMZUdp6gjMVJilUgJUZASoiAlREFKZGX0FiAIx3TFn9IkAr+L5pYORVGSUGsw9lrwnvgKlSARYnA4s/lfocE8G9L64nCWGGHQ0JLNssrXtx20L124vRbsmc6YvRf6XjH4SlwfQIs3uWHDDSifYuy3UFdpjWqgzcGDo8QIF7vZNhd61lRWd3zK5oefxJcLizZW2x9Q8i9e0DZIePOYXRWDn8QDGxOSMM7mzNEM3h5JKBY8yuWlFIn6yfLaTiVUG8v6tgyOZ2IAOz6wuxfshCzCh6PTWqHGKX2wFR3OHaXnEJ7v0Do2eqfFb08cJRipkYruUM7N7NkY47HH7kxxxzQ2Sotblgm+EozhUX1a5ShqugmrYcNu7MBYT/KTUDXYXvLOKC/cJaJq+6dmUu15kf6Mg0gJEkTgo9s0oaeqX9MMWEceHj9/PvCKipQnkYFfIv18B2SlEhFpkSzPl3msXCIivG2j6biTMcuDEBJFkRKiICVEQUqIgpQQBSkhCpWXuH96/vk7dlX/UXD/8EwKFR6nBOAbqusQElUhvLEAAAAASUVORK5CYII=" InformativeScreenshot="3ef6f72d1171ff9c26bc1793b679b624.png" Reference="H4z47meBBEGgAL5h77tv3Q/aKmJ7d1_3keZyugVNwa7Mw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                <uix:Target CVScreenId="efeb7850-0086-42c1-aa98-5d1089f0c473" CvElementArea="161, 444, 793, 48" CvType="InputBox" DesignTimeRectangle="165, 447, 745, 43" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='form-control ng-dirty ng-touched ng-valid' placeholder='Search' aaname='' /&gt;" Guid="d6dd90d8-09d8-4935-927c-036063bf0c1b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAu0AAAAvCAYAAABXAfTxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOJSURBVHhe7dyxaxtXHMDx+zO0eix0yRZDlwg61Fu91dDBeDQdgqciuhiRIXgqnoLJULCHgLM5m70U5CHGGRJUSEAReLCgww1BaMjw693prNSu7Mo4bh7u5wM/8NPp3vzl8awsAACApIl2AABInGgHAIDETaJ9OBxGv9+PbrcbR0dHxhhjjDHGmC80x2/enptJtJfBPhgM6hUAAJCKSbSXJ+wAAEB6JtFeHsMDAADpEe0AAJA40Q4AAIkT7QAAkDjRDgAAiRPtAACQONEOAACJE+0AAJA40Q4AAIkT7QAAkDjRDgAAiRPtAACQONEOAACJu0a0jyLPR/Xfn9Nt7QsAAHfD7NH+biuaWTs69fKzua19AQDgjpg92g/bkd1GXN/WvgAAcEfMFO29Z6uxeH+uiOu5mP+2Gc1iNl/WD2MU3eftWPq6MX6+3I699/WjWv77RqxU72cxd38l2s+7xVv/ti8AAFCaKdrzP/Zj95dmEdcrsXmwH/vFdP8sn4yisz4f2f3V2DrsRZ73ovPrUjQaq7FXPS+82oj5bD5aL8rnefQOt2Lt4Xb0ikeX7wsAAJyZ+XrM6c5iEdcXrrG83iyCfCG23tXrSh67y1ksPC2zvH7vm83oVqt/mrovAAAwcaNo7z1pRvb9+NT873q/Fd9dr79ZnbQ3YuHR3tRTdNEOAABXu1G0d9az4rNL5uf9+lsR+evtWPuuvLveiK9+2Ii9959+4lG0AwDA1W4U7cePGlNP2i8zOunE1k/zkTWWYvdk/JloBwCAq80e7c+WirhunYvr0UErGtlibNcBPptOtLIsFndOq9W0fQEAgE9mjvbybvq97F60DvJqOapuuPRi+8dGNB60Yu+kvvLyMY/ui079j6ejOH68FGs7x5F/rD6I/OVGLBT7bLwar6fvCwAAnJk92uM0dpfHv7VeTvNJfSnmQze2HzajcXaXvbq33o79s+svB5ux8qD8Dfez53Ox8nT8O+1jl+wLAABUrhHtY6M8jzyfchw+Kj8v5kO9vmD8Xh6j+sT9okv3BQCA/7lrRzsAAPDfEu0AAJA40Q4AAIkT7QAAkDjRDgAAiRPtAACQONEOAACJE+0AAJA40Q4AAIkT7QAAkDjRDgAAiZtEe7fbrf8CAABSMon2fr8fg8GgXgEAAKmYRPtwOKzCvTxxL6/KGGOMMcYYY77MHL95e24m0Q4AAKQo4i9BCHWJZ4Lv+gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                                <uix:Target CVScreenId="efeb7850-0086-42c1-aa98-5d1089f0c473" CvTextArea="163, 421, 124, 19" CvTextArgument="Original Insured #" CvType="Text" DesignTimeRectangle="165, 415, 124, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Original Insured' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Original Insured' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Original Insured' /&gt;" Guid="e99f5503-ad0b-4aae-8ac7-1871965cb701" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIAAAAAiCAYAAACX6tEuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAY8SURBVHhe7ZnPa9tIFMf3b9FN4IMhB0Ngm1MMC4IcDDk0sFBDoIZdNkuhhEJQD0WBBecS00NDFyIKiwgUXCi4UNaBgHoIaKGgQ3EPwTkEREmqhVDtbsp334xmbP2wE9lr7y/pCyLRSHqaefOZ997IX6BQrlUAkHMVAORcBQA5VwFAzlUAkHMVAORcBQA5VwFAzlUAkHMVAORcBQB50IcOPv7o4LM4jWo8AFcB/HOfH8GVaMuiSxfmoya6p+I8g/qvmzCeuQjE+azkbCtQ7ljwxPn/Tw4MRUH9YMwIL2nuLunvLwbOv7XwieY0+ODHQBgBQIDewSa0EjmPjIdHGWu7NrwsILzbQ5V16nlWt/vo3FehlJo0nNnqJgD++4BcD8Af70xcfKXi/Es6FhQ6yrj4oRtbaCkA+gd1qEoV+uv+YOX7b000yEB128m2SieJGFLTPHOD8g4A15ULf5VNvoKPP/uicag4AH4Hm7Ty6z/1RcNQwbGBJWUJrbeigacIgYPfg3PkoM/CjUgdybQReOweG857b5BafHY/E4Uq34+gxWzI86APl56z3w6BjEratY978BPXJwaA9UO+9tSFTXbd0xHIBx56x/TOIzccs1TUJ1JJf4zzm9QN441f78O6fT0An17Wcf49hf++hYuagcvfxAWhGADBoU7hXkd3xJiBHswVBUuP3fD0zEJd2YB1uIdaqYyqtgbzvWxXYByHt5FVODsa1IU16DsGNmplnlKqKxq0J2HQT00EwaaUDFgvKRUtVqGtVFEmm+WH9jAC+Q5a6xWyy66TrUVKIwsNtM/EddKkALBzddtC54GGyjLZXA77qh9FHHJK4yupqKzrMO7VUKGxb7wSFli/FSOeynhbHZbs1zi/kfo03mqpAu1uAw2NxrZMtiJweIcGT81l1je6XtYaqNOcXAfA518JFGHj9ws/FWhjAPT2NSi3LaTXfyjusPV26DA+EBWqZsCORpYkAG6LIgc5QBaFjNo7KjZfDR8aCQDZqD7sDuoOBqdKdtqDm3xaCRTeBiuLAK1FACVNA4DC0t+hbAnQ3SKw5JhJ/J5Htjgj+RQ1ZB8yAzDCb+SnainiJ1LvaQ2qhP6szcGLRWdqa9yUAm5QDICJHCYmWj9MhIsEAN6LBpRVMwYVt0P1hFTqvUmnMSXBSopCa/dh3M5E4xlxzuRRTRSdVGeHgLizBzedTicAIOk3BhrBuzuEl4uizZoojvnivNWCG1vCGWqAG5SOACsmBfvRsh+Rg2IRYMSEJNv5roBC87k45xEg3umpAfBdtHc2UFsso6JpqFKhM28A2DZ3j6UetjPaMmFHa4QJAIj7zeM+URcptLN0Jg+WBoQ93reteAVPrbMFIKwBIpMVk4vWrWQNkAEA6jKrAZTlBoydJvSvy1DXKc1ESJ4KAJ6Lq9g8cOEJr2SZ0Kiy3J8CQCg4dWBtr1FtUkbjhXjiLwKwtk8pTRbIgyMcHO/bdx1KfFHNGAAENnQqMmr76RgQ5uAazBPRkBWAwEFT09E5kbuAdOxMOT4DAO7jpZRDskxoVFnuHweAVO8pwS2fEQDY0TD9JgsA7N2UWr5pJyZ4KN6PeacAJrbdqzKqn4mVRbm1f9SkipWKsp3Id4CsALAi8Fai4EloGgDCdEW5WDjEd8NvFbEJ5fk6PqFRTQ6Ah/Z2C/agXwGlxaVhoXZiokYFnv46HGzwvo1NjQq+DADI3UWdRQE5yecubUPF/7wIpMl+Kq5fURG8z77ZzBgAJu9NC3W2rSLj/ChpFGp78fyTFQByWudeZWiLH7SNWqWoIAY3DQC4ZJFF9lGF9sCC84JSWMROcMSiFoXWEd81mCYGgDn9QEeNQGP5mtUcrJrvDh4QW14xTnW1CfukCz0LAKTgnYmNqN8XatDlFpPk07ywd4fXqQZ5YqN9fw4ASAVsixP9iDGFWETReM4PP4jw48yFuU4DTeW0yRUwezEy4+JjuOb6VJJjGWc4+WFrQoV+H/O8fPeMxnQtALMQW1WjVqC7Gwmdhf4xzR0A7znlqeVNmEc9eHz199DdpeqZfbWb4BfDQvPR3AFg8o4t7G01wr3tXR17B062XxYLzV1/CwCF/r0qAMi5CgByrgKAnKsAIOcqAMi1gD8BWlRkj8FRLhEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Insured Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_3" OutUiElement="[outputElement]" Text="[Row(4).ToString]" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="c0b62456-e1d4-45d8-a7ec-11d988508195" ContentHash="m_xUZvrunUOdW0r4GHZy3w" CvElementArea="536, 427, 189, 47" CvType="InputBox" DesignTimeRectangle="540, 430, 184, 42" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='insu' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='insu' tag='INPUT' type='text' class='form-control' placeholder='Name' aaname='' /&gt;" Guid="cbf98f08-f1f6-479d-9fc9-47b78ca498b0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAAuCAYAAACS53PjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOQSURBVHhe7d3pTxNBGMdx/2A1hggIWGq5LxFUlEOtIAgqjYCCgByCQCBUq1gCGuQQ5ChHKVcLAR77jDtL6fGCdjVN5/dJNobObOuL7+wOG00vEYBCEDwoBcGDUvTgPR4POZ1OstvtOHAkzMFNc9uSHjwPuN1u7SeAxMBNc9uSHjyvBoBEFNg2goeEh+BBKQgelILgQSkIHpSC4EEpCB6UguBBKQgelILgQSkIHpSC4EEpFw7ed3hINbXPqcraQF6vT3v1LznW/3FEewUgvlw4eI68tKKGrqRkhoQtxzre92uvAMSXqIOvqKklS8Ed2tw6+3fzCB7iXdTB29o6qKi8kl6/7aTT09NzY4HBHx4d0fConSyFZeKukGrOp67eATo+PtZmkLhTNNrayLWxKRbS1VQzZRWV0fSPGXG+re0dJaVn0XVTDvUNjuifJ62suuhelVWcx+/f2tEtzgMIFnXwHLXdMUE3buXT3MJiyJjU1Tcg4h0aHaeVNRe9amkXYY7aHdoMEvOTTbmUkV0kFgMvEHN+KZlyS6iw7AHVNTbT+OevVGmtp6SMbJqZndfOJJqdXxB/h7omm3j/Kf8i4XOb/AsoeGEAxBQ8X0X5ilz9tEFcscMFf3Jyci48OedRXZP+ugz+59yC+JnxYrqcbKKeD0P6PNf6BqXzovAvInbk//yHj5/pny99m5wW0fMdAyBQTMEzjjTNUkDOqe9hg5c4yKXlFRocGRN7f57H8xnP56u5e/vsP9jyXYMXgWNiUnuFxDjPk+8vFwAvjkBb7m3KKbmr33kApJiD56svbx9467G+uRUS/IHXS43NrWIPXuCf09LeRbfvVxsSvJzDd4LgI3jrA8BiDp6tudbpZk4x9Q4MnxuTWx4OPPBpzpP6F4YE/2vxN6Vk5oVc4QEiMSR4xk9a+JdTfnIjx2SgwUEaFfzBgVd8Xq3/l9rAPTxAJIYFv7u3L7Y1vJ2QYzu7e5RdXE7Whpfiau/z+ai9u4+upVkMCZ7xYuLtEj+K5PfnLdbS8qp4pAkQzLDgmWPCKWIOFyQvBB7j/T4/uzcqeA587NMXSjHn6ft3fl7/prMHV30IceHgo8GPDzlW/vNf4cefnp1d8nh2EDpE9F+CB4gXCB6UguBBKQgelILgQSkIHpSC4EEpCB6UguBBKQgelILgQSkIHpQSNnh8bSUkoohfW4kvJsaRiAc3HfaLiQESH9EfkFic9gXzcksAAAAASUVORK5CYII=" InformativeScreenshot="c8f88f18c7e75975428c8294c89c5bc0.png" IsResponsive="True" Reference="H4z47meBBEGgAL5h77tv3Q/7Vthbhhw4Eq7gsWqGWtDNQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="c0b62456-e1d4-45d8-a7ec-11d988508195" CvTextArea="538, 405, 100, 16" CvTextArgument="Insured Name" CvType="Text" DesignTimeRectangle="540, 399, 98, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Insured Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Insured Name' tag='LABEL' type='' class='' check:innerText='Insured Name' /&gt;" Guid="9a909f38-e3d5-4c3b-8364-49a97fb2e60a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAgCAYAAADg3g0TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAATwSURBVGhD7VfbK3ZdEH//FhfuXLiSJCSJREiORc6ElCRKoiRKSiRu5AI55Aa5UEqIHFMkx5DkfD5EmK/f2LPbz/62j+d7nov1vu/+1e6xZq01a2Z+s2aWX2RDSdjEKAqbGEVhE6MobGIUhU2MorCJURQ2MYrCJkZR2MQoCpsYRfHHEdPf308xMTF0dXWlSX5POBDzJzj1nQ/19fUUGhpKBwcHmuQT29vbFB0dzb8q4K8kxsvLi2pqaujt7U2T/mbEwPDb21t6f3+n5+dnWl5e5g9/G4H5w8NDmp6eZsfE4Y+PD97/9PTEY0BkDw8PmoT4b6yBnvX1ddrY2OB1gPHcx8dHlhmBPThzdnaWzs7OaGZm5ltiGhoaKD4+nnUKrIiBDScnJ6zbym+j3WKDnCuyubk5uru7Y5kR0H10dMQxQ+yw3oj/JAaKY2Njqbu7m8LDwykyMpK8vb2psLBQPwwkNDU1kZ+fH1VWVvKarKws1gGji4uLWa9AZAiQQIKFLA4ICOAx9M7Pz1NQUBAlJSXxhxK0tbWl7SK6vr6mkpIStikqKoptyM3N/ZYYfLAJdkjSmIk5PT1lP319fVkOu3D+3t4ezwPQU1VVRdXV1RQSEsJrgoODaXV1VZf5+PiwbGdnR9tFnGCYx/q8vDz+RQyNN/hbYvz9/amoqIiDAKytrXEAFhYWeIw1CIoEDMzLWmeIQXnBOskc9AAEBDcAQIaNj49TQUEBOwYnmpubKTExkY6Pj3nNy8sLtbS0/IgY2JiWlkajo6MsNxMDXbgl+AWQiDk5OdTa2spjAHoQ+KmpKb0SZGZmOsguLy85qTo7O3kPZG1tbZxQUgFubm5Y9+TkJI+BHxGD6yjAHNZIsJFByKSxsbF/XUdniMnOznYob3CkrKxMDwxwcXFB6enpfCZKTEREBA0PD2uznzD7YIYQA0xMTDCxKIFmYsx4fX3lLDfeMugxjgGzDETU1dXpZ8Ju2Le0tMRjQW9vLzU2NmojNxCDg0dGRvgWQY5ASS12hhgrB5F5CJZ8IAKlDXbhQ3lFTzLCGWJwXmlpKXV1dfENTUhIcCDm/PycbyBKUlhYGNtjtPMru61kcib0BwYGsj6jb1LCBS4TIwAZKDWYQ4lAdsM4GPl/iUGG4jzjhxKEMgbbELCVlRVtxyecIQZAaY6Li+OyhdsoxKA0IxH6+vr0kmO28yu7rWRyJvSj9OM8s2/GiuE2YgSo98gG7BEScE0FcBJNVQwFrJyB/uTkZL1fmYHajYeJK6UMAMkoIbg5KSkpOjHoJRUVFVzCBGY7rez+SiZnfmW3GS4Ts7i4SENDQ3ov2Nzc5EzDkxdO19bWcv9Ag8Otam9v50YvhgJWzuBVhPqP+iwZiwYsrxtp/rAFPQcldXd3l7PfGWIAJBNshq9CDHpcRkYGJwZ0I8PRS10lBroGBgb4tkMnxujN8Ev8BFwmBm/w/Px8DjYOw29PTw8HDoAOOOTh4cHPWhjV0dHhEBwrZwDoRlnEXtmPfiC67+/vqby8nDw9PXke/5sMDg5y5jtDDAB/jMQgMVJTU1kv9ONZDNtdJQaA/agi8Ed8Q3XY39/XVpiIcQWojwiG8eoLYAgyz2ruJ4Bu6S1WkHnzq9BVyNPfnDDugsTF2FsEbiPGhnthE6MobGIUhU2MorCJURQ2MYrCJkZR2MQoCaJ/ADJFMfMgW13tAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.VerifyOptions>
+                                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          </uix:VerifyExecutionTypeIntoOptions>
+                                        </uix:NTypeInto.VerifyOptions>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="10" DisplayName="Click 'Insured Contact Search'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="7d124b3e-ad8d-4884-8b58-25d68e29b03a" ContentHash="QZF7gJbOXES1JZHWngdbCw" CvElementArea="1355, 431, 39, 39" CvType="Icon" DesignTimeRectangle="1361, 433, 31, 36" DesignTimeScaleFactor="1.125" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;ngb-modal-window&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;i' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='I' class='fa fa-arrow-circle-right search-arrow' aaname='' /&gt;" Guid="59799cd6-7277-458d-9da5-e61e25601f53" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAoCAYAAAB0HkOaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMhSURBVFhH7ZfLb01BHMeFiLCRsJKIxCPCwsLCQiQWVlbCQkSIhOAPEIkERdDEoxRBvEoTj3q1xKJUpPFOI0pIEJqmbWhRj2qrqFS/5nvP3GPumd+cO/eeEot+k++it7/fnM+ZOTO/3wzAf6R+GJf6YVzKG6bnF/C2E3jT/setX4HeXh2Qh3KC+dAFFN4EJu8BBhWo5HW2+fvU/cCxh0DHD53oKS+YxjZg4Tk3gMtDNgIrLwNfvuuBsigWhkux4zYwbJP9oFw8YitQ/iz7EjphOMWcjYHr7cHzMcdZUwV09+gHCBJh2tS0zjlpDyiZSzFqm98SEmhpuRvIgmHgkov2QJJHFgK3GoK8CrUMw7fIcaYJtLlaXjIL5syT4G2lgUybIGn5AjHmbqNOMpQB06R2zcRiO1nyoQc6KSJfoBlHgPbI1s+A4QcmJUpefdW9O3yAuFylj3SCVgjT0uE/KzSXsuhOMqBZJUDXT52gFMJceQEM3mAnxDkpEP9X81oHK4UwqyrtYB8nBdp7XwcqpWA6u4GZR+3AMTuBReeDrR7nFZeA2ubUeKLigBZf0EFKKZj3qtpOUsXPDBqqSkB1fSqmT+QC4iRwMqgUDMs/Z8EMiq5nX4iVPFpezC3+T2Gq6oIZN59jwXBbjy3KDOprmPpPwITdmc+gLRj+wR+jgXNPAc9bM7s5l78Z50VULhB6wVkdpJSCofhVS8E+nl/m7uriQOiCGzpQKYQpUR+XFJzNSUB4yFa+1MFKIUzdR2D0djshzklAaB4nPFbSCmF4gi5Xh5eUJHne6WQgNAuzqRCG4u5xnZRRl6m+R5IvyPhdQMNnnaSVAcPZYWsgJUc9/TDQrI4EU74gPPh4AEaVAUOx/5XqlGQTyBeEZj2T+mALhsplYF7o1l4PmnLp/1HzRfnCkkQY6uk7+1ROamlpTTlhKCbOLrUHzdX8RngHc+2+tGJhKN4qT9QGt0LpQdk8Tu2aa6/czZeprDBpsVc9rqCm7LPbgKh5oZt2MOhh+DK+8oYxxcJ6rwk4UAMsqwh2By/4LCmPW+KLZpzygvlb6oeRBfwGZhmJePTouZwAAAAASUVORK5CYII=" InformativeScreenshot="bb62d81aafc386b631a5b11a6d6f72a8.png" Reference="H4z47meBBEGgAL5h77tv3Q/XYGWaEGWCUajDAYEPCwSpQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="7d124b3e-ad8d-4884-8b58-25d68e29b03a" CvTextArea="538, 333, 253, 21" CvTextArgument="Insured Contact Search" CvType="Text" DesignTimeRectangle="540, 328, 253, 34" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='modal-title' aaname='Insured Contact Search' check:innerText='Insured Contact Search' /&gt;" Guid="1470d2df-33e0-4c53-b2e0-5e9c59ed7a19" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="Label 'INSURED NAME'" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="2c7bcc27-a519-4a03-9c2b-0b0c5d9f9839" CvTextArea="603, 493, 110, 15" CvTextArgument="INSURED NAME" CvType="Text" DesignTimeRectangle="593, 474, 291, 54" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='INSURED NAME: activate to sort column ascending' tableRow='1' tag='TH' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='INSURED NAME: activate to sort column ascending' type='' tag='TH' class='sorting' aaname='INSURED NAME' check:innerText='INSURED NAME' /&gt;" Guid="a8c20541-0622-4366-a58d-d1a225188807" InformativeScreenshot="1dcee7fd160f550f9d0d37736297711b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                                            </uix:VerifyExecutionOptions.Target>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '8070728'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="2bfbcbd2-39c7-4faf-aa3f-3e807c59d321" ContentHash="afBa092Ep0We4PJfI_ZJvg" CvElementArea="548, 575, 22, 22" CvType="RadioButton" DesignTimeRectangle="553, 578, 15, 15" DesignTimeScaleFactor="1.125" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='DataTables_Table_4' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DataTables_Table_4' tag='TABLE' /&gt;&lt;webctrl type='radio' tag='INPUT' class='' aaname='' /&gt;" Guid="1e846b5c-2967-46b8-935d-024bddb51419" InformativeScreenshot="16bd674af6d75fff5d8f9dc764dff921.png" Reference="H4z47meBBEGgAL5h77tv3Q/gUzvikylZ0S3I3idgxBQSQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="2bfbcbd2-39c7-4faf-aa3f-3e807c59d321" CvTextArea="1237, 579, 61, 16" CvTextArgument="8070728" CvType="Text" DesignTimeRectangle="1229, 563, 149, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl id='DataTables_Table_4' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableCol='4' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DataTables_Table_4' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' aaname='8070728' check:innerText='8070728' /&gt;" Guid="85447b86-e800-4399-94d7-92cf70b158b2" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="Radio button '8070728'" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="6ff865cb-2266-4b60-b8e2-fab9b4700bc6" CvElementArea="548, 574, 23, 22" CvType="RadioButton" DesignTimeRectangle="553, 578, 15, 15" DesignTimeScaleFactor="1.125" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='DataTables_Table_8' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' checked='1' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DataTables_Table_8' tag='TABLE' /&gt;&lt;webctrl type='radio' tag='INPUT' checked='1' class='' aaname='' /&gt;" Guid="34128fb1-66e0-4740-a03e-e6e7ab6fa3a1" InformativeScreenshot="d1f2b05b601e2df4ab18913a9867a1eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="6ff865cb-2266-4b60-b8e2-fab9b4700bc6" CvTextArea="1237, 579, 61, 16" CvTextArgument="8070728" CvType="Text" DesignTimeRectangle="1229, 563, 149, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl id='DataTables_Table_8' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableCol='4' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DataTables_Table_8' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' aaname='8070728' check:innerText='8070728' /&gt;" Guid="ba5b5614-30d1-48a2-b93c-534673899683" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:VerifyExecutionOptions.Target>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select-Insured Screen'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="569dd677-3b2b-457b-874a-d00f3f51506c" ContentHash="5V75aioEI0GlMfCLOpTOpA" CvElementArea="1257, 860, 146, 52" CvTextArea="1293, 876, 76, 18" CvTextArgument="SELECT" CvType="Button" DesignTimeRectangle="1261, 863, 141, 47" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Select' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Select' tag='A' type='' class='btn btn-primary pull-right' check:innerText='SELECT' /&gt;" Guid="c037d227-2a7f-40d4-bd67-bcd04b6f28e8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAzCAYAAACXDOrGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAI0SURBVHhe7Z1PahRBGEdzDo/jPbyM58jaIwiCC0/gzoX7BLIIEQYGNGpafpBf+6Wsru76pjOW+B68zaS7UtP1+k8g0BcTwIkQEZwMEcHJzBG9u/o6vXhzM11cXiM2VSfqxcwRERD2qF7MHFFtQ8SWhogwrSEiTGuICNMaIsK0hogwrSEiTGuICNMaIsK0hogwrSEiTGuICNMaIsK0hogwrRk+ovfXv/9vxVwdf0wv394+2e7y8/Hxp8t8+/kwvf54eLJ9/GzJ3rGjtfl/+vL9j+22/A5R++5/SzNsRDpQOmBLHO4fplcf7ubtR4tIc9Mcl8jMXxBRh1sOajyjR4po7QQwMQgiegZ9GygXOS5QPJt7opCZiHrHFuUVR/trHNEaz9+/3H8kzfARidozROlIEWm+YikAjbc2FhHtoA6cDmBJa2HWqN3+eiJq4bHjlXJL/EsS0U5qcbXINcrFJ6Lza4aOyG65KhHR+TX/RESl8XlJC6zPeqKQmYi2jq14xFIAGm9tLCI60Xjlqf1J60UVOtjxsxEiivMrI9D+Gsdo27ivJaId9NncIi5qXLgWZXQtHHDv2PGW1qJ2glgi2sF4NVqi9oyzxjki2jL/tasaEe2oD2aktgCjRWRr89/ywE1E+F9oiAjTGiLCtIaIMK0hIkxriAjTGiLCtIaIMK0hIkxriAjTGiLCtIaIMK0hIkxriAjTGiLCtIaIMK2ZI+LdHthj9d0evGUIt6pOqm8ZAsgxTb8Ab1egSDDRXRsAAAAASUVORK5CYII=" InformativeScreenshot="d5478b0450b84fa6125bdeb8fa49e302.png" Reference="H4z47meBBEGgAL5h77tv3Q/PWWihebrbEGlRTzc6mV6Rg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                <uix:Target CVScreenId="569dd677-3b2b-457b-874a-d00f3f51506c" CvTextArea="538, 255, 253, 21" CvTextArgument="Insured Contact Search" CvType="Text" DesignTimeRectangle="540, 250, 253, 34" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H4' type='' class='modal-title' aaname='Insured Contact Search' check:innerText='Insured Contact Search' /&gt;" Guid="8646212f-dafa-4bdb-a302-867dc2a5449f" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                                                <uix:Target CVScreenId="569dd677-3b2b-457b-874a-d00f3f51506c" CvElementArea="1091, 860, 150, 52" CvTextArea="1126, 876, 79, 18" CvTextArgument="CANCEL" CvType="Button" DesignTimeRectangle="1094, 863, 145, 47" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Cancel' href='javascript:' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' href='javascript:' tag='A' type='' class='btn btn-primary pull-right mr-3' check:innerText='CANCEL' /&gt;" Guid="f531a5a1-0dff-4489-b6b4-aee3100403cb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJUAAAAzCAYAAACe50q8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAKgSURBVHhe7Z1NahRRFEazDpfjPlyEW3AdGWcBDgTBgUNHzhw4yEBIwIEoNgT/U/K1fOXleV91V/WFPMM5cAimX1U/6p5U10DoswmgGKKCcogKypmjen71dXpw8X46O79GXKW6UT9mjoqg8BTVj5mjyhYirtEQFZZpiArLNESFZRqiwjINUWGZhqiwTENUWKYhKizTEBWWaYgKyzREhWUaosIyDVFhmea/iOrF9d//q2PefPqRrrWPXn6cdt9v92u//bqdnrzepevO397s14jsnPqduLr5OT189uGf14/dW3yfHnGfXr+099E0Q0cVw8jQa1qTHdsOUcM/tC4bYC+qtXsjqgHUADXIQ/TuII7B9Na1w27XZVFt2RtRDWAcQvtXr4usiy2yix5fj3HpnHGdzIYd12VRbdmbj8n2m7l2/QiaYaPyMHsfcbrovQvu5xwd+/jV5/muonO2a2MgJr5nFtWWvRHVHRs/XrIQlsyOjZG1EcThPX33Zf9T+BmsjWrr3rJ4W+L5iKrYU6LSAByGBtP+rn1gb4fniNp/E9Vhzb2LyhH0cBxe3w5PdzLd0YTWXu7+7IOoDmvu1TNVDGIJHRvPI+K5/HEZiTFu2dvaSNauH0EzbFS+qKIdni6yLrbR2vaYJQ7dEeLdyMSoTtkbUd2h2WAz1txBstd7w4vhiPg+W/bWnq+Hn/mOWR/PP4Jm2KikBq8AesQQ4h0i3omicVDt8LI7giMU7QDX7E0S1WBmzzhtOHGNBhJfszEED2Qpqhhqb4DH7E0SFeIGDVFhmYaosExDVFimISos0xAVlmmICss0RIVlGqLCMg1RYZmGqLBMQ1RYpiEqLNMQFZZpiArLNESFZZo5Kr6bBk8x/W4avkULt6pu0m/RAqhhmn4D/HzUM7z9ujcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="Input 'Original Insured'" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="3a81a697-9dab-40ab-9851-ce59aa5ab82a" CvElementArea="161, 429, 794, 48" CvType="InputBox" DesignTimeRectangle="165, 432, 745, 43" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aaname='Original Insured' parentid='nav-tabContent' tag='LABEL' /&gt;&lt;nav up='1' /&gt;&lt;webctrl id='name' tag='INPUT' name='insured' /&gt;" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-valid' placeholder='Search' aaname='' /&gt;" Guid="06cde540-1271-4226-95e1-c03a43a4df17" InformativeScreenshot="7fa611d1f871581788bd6a26d00e3d8d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="3a81a697-9dab-40ab-9851-ce59aa5ab82a" CvTextArea="163, 406, 125, 19" CvTextArgument="Original Insured #" CvType="Text" DesignTimeRectangle="165, 400, 124, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Original Insured' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Original Insured' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Original Insured' /&gt;" Guid="25bb11c0-1c57-4d30-8954-971941049691" SearchSteps="Selector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:VerifyExecutionOptions.Target>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="354,272.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V3">
+                                        <uix:NMouseScroll.SearchedElement>
+                                          <uix:SearchedElement>
+                                            <uix:SearchedElement.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="f0496b11-1753-4f61-abca-bc81c761b498" CvTextArea="165, 688, 235, 20" CvTextArgument="BROKER INFORMATION" CvType="Text" DesignTimeRectangle="165, 688, 1587, 29" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sub-header' idx='2' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sub-header' type='' tag='H2' aaname=' BROKER INFORMATION ' check:innerText='BROKER INFORMATION' /&gt;" Guid="198ea9ba-9d60-4a50-8e02-9ee45beefe06" InformativeScreenshot="750ee65033371b87485c3ea201305d7c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="f0496b11-1753-4f61-abca-bc81c761b498" CvTextArea="163, 826, 300, 19" CvTextArgument="UNDERWRITER INFORMATION" CvType="Text" DesignTimeRectangle="165, 826, 1587, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sub-header' idx='3' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sub-header' type='' tag='H2' aaname=' UNDERWRITER INFORMATION ' check:innerText='UNDERWRITER INFORMATION' /&gt;" Guid="f20c7ab4-6d7f-4c3b-b469-07ae359dca7f" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:SearchedElement.Target>
+                                            <uix:SearchedElement.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:SearchedElement.Timeout>
+                                          </uix:SearchedElement>
+                                        </uix:NMouseScroll.SearchedElement>
+                                      </uix:NMouseScroll>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Brokerage'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="a692a366-c426-49e7-bdf7-ddc14bf3730e" ContentHash="1GEKAv3eukyopJRk4X7RAQ" CvElementArea="161, 751, 794, 48" CvType="InputBox" DesignTimeRectangle="165, 755, 788, 42" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='Brokage' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='Brokage' tag='BUTTON' type='button' class='ngx-dropdown-button ng-star-inserted' aaname='Select ' check:innerText='Select' /&gt;" Guid="5e978c1d-63ec-4767-85fd-5b3ce382f946" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAxgAAAAuCAYAAACrtr9JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVHSURBVHhe7d2/axtpGsDxqfMXTCvYJnDFprOLNIIU63DFGlKcYQuTypgrjpDiMGkWkWJRlbhaTDqHsKArAk4nNwGlWHCKPduQA7nYQkWKMfEuKlI8NyONZMeWf7GvYY/7fOABjfRKdqkv78woCwAAgEQEBgAAkIzAAAAAkpkGxqej32P3w0Hs/PuDMcYYY4wxxlxpqoaoWmJiGhjVC4effquPAAAALlc1RNUSE9PAqOoDAADguk62hMAAAAD+EIEBAAAkIzAAAIBkBAYAAJCMwAAAAJIRGAAAQDICAwAASEZgAAAAyQgMAAAgGYEBAAAkIzAAAIBk/pyBMdiKR/easf5zfQwAAPxPSB4Yxdv1WP2mEVmWldOI+eVWdH4p6lev6NfNWCzf33pXHyczjKIY1o8BAIDUkgbG8F0r5rM8Fp52ovt+J3a2t2Lj8UI0ssXY/LVedBU3FRj/2Yhm1opefQgAAKSVMDCK2FrJIlvulI++VHz8k+xglAGUCQwAADjj8PCwfnS+V69e1Y/OlzAwBtH5rgyMv2/F5SchFdF7thoLX5Xr89uxsLIROycb5JzAGO53ovW325GXrzXmHkbrTb9+5djwYCvay824nZef/dV8PPyhNwqe/k+rsThXnbrViPl7zWi6xgMAAKZWVlbi/v379dFZz58/j0ajEbu7u/UzsyUMjDIxfloqv/xXp0h1Y3BuZfRj87s88r+2Ymt/EMVgLzr/nI9srh079YpZgTE+/Wo+Vl/0ol8U0X+3Hkt5Hquvj8tkcopW8x8b0S0/u/++DJIHq9EZlEmz343Ok2YZGA9jfbsb3XL2PtZvBAAAzo2Mq8ZFJWlglF/xY+fZYjTKOKh2Jpa+34xe+eX+pOLNauT5o+ge1U+M7ET76zzWtusqORMYe7E+l8XCj1/uWBT/ehjZNxtlslTKzyjX5I+75+6gDF4uOkUKAAAucDoyrhMXlcSBUSv6sTU5BaraUXg6Pk2pCpDu4/K5J2e/4veeZLH4sq6R04Exujh7MTYP6uOJg2pdHQyjNfmF120IDAAAuNwkMq4bF5WbCYyJz4PoPRufNjU+lWkQmw+q6Jg9Cy/qHYrTgTG6OHv2e7JsLbqfJ2suvluVwAAAgKu5e/du3Lp161pxUbnZwBjpx+a3ZQh8X32try8En7GD8YXTgfFzq4yUGTsYJ43W3In2+/p4BoEBAABX9/r16/rR1SUMjGHsvdubcf1DPzbuZZE/HV/C3X+xENnX5Zf8i241dTowht1Yy0+cQjVLveb0dRonVRehVzseAgMAAG5GssAYvm9Hs4yCxoP2+O5Qw2EMi350ny5Ens0f7ywc9aI1V65b3oidyV2choPovdk5/v2MOjDW3tbHpf7LpcjzZqy9GUwjptjfit5+fVDq/1jGS/m3pmuqz33Wjs5k56P8H+9kd2Jtu74i5KLIAQAAri3hDkZp0I12/TsVk2sk8r8sRfvt8a1kRz72ov2g+k2KybrG+Lcwpl/4x3eEyrKl0S1mx4ax9/JRNKvftzjx2a3tk7sa1V2slsa/gVGvqYKnO10yiM7y8d9tXrDbAQAAXF/awJgYFlEU1VyyRXBUr5u17PNw9NrZl8bPX/jZ9XuLL26Fe2x4lf8NAAC4tpsJDAAA4P+SwAAAAJIRGAAAQDICAwAASEZgAAAAyQgMAAAgGYEBAAAkIzAAAIBkBAYAAJCMwAAAAJIRGAAAQDICAwAASGZmYOx+OIjDT7/VRwAAAJerGqJqiYlpYHw6+n30QlUfxhhjjDHGGHOVqRqiaomJaWAAAAD8MRH/BbSXIU9VJTCAAAAAAElFTkSuQmCC" InformativeScreenshot="6d8e045cd44cc7a655f6cc35a1325abe.png" Reference="H4z47meBBEGgAL5h77tv3Q/8lqih0qr3EKD88uVjJ3JvA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="a692a366-c426-49e7-bdf7-ddc14bf3730e" CvTextArea="163, 729, 84, 19" CvTextArgument="Brokerage #" CvType="Text" DesignTimeRectangle="165, 723, 83, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Brokerage' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Brokerage' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Brokerage' /&gt;" Guid="04fe5a0e-2ae6-4d9f-b367-502a066cb3a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAiCAYAAAAqJ0UeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVISURBVGhD7ZfBa+NGFMb7t+gm8MHgQyDQ5FCsk2APhlwMpTEEYgisy15yCeoh2KfkErOHmB7Wl2ICAQcWHCg4EHAPAS0EdAjOISiHEB1StEtapRi+vhnNyGNZ3nW71tJu9MGAR37z9OY3b96MvkGm1JTBTVEZ3BSVwU1RGdwUlcFNURncFJXBTVEZ3BSVwU1RGdwUlcH9bHn4sNvE40h0FX1xuHZDg7beoZD+7woQ3AcYwYZfqOD9PfDXvYcnBXIMro26RpNXW24JpVctDBZE46uB++Tg/Y9LePhWx0NBC9sPFj4QZKlEuJWj8dSDOwftDR1aqQ1XPPscfT2ZG+qPN0YIdqeHJ/FM6pNwuS7qlMUVdOXjUQDfD8LfBH9w7sBTtkNwy54NYF/74slYSXAD3x/7kwpcOORjcOkiUOsZe/eDsPWHsM9tuI9hl/3nXtIYGufcxvwJBR4bw2LzyA+9lzU5Xsi/tsmHjaGX7CPSfRe/f0clwXUpiw347ybt54Ib/LoNbaUJR/Q5bOr3TrdhUNkwi3X0md+Ri+5WnpcS84UJg1ZUX6NxSvBxuAH5MnIVdG7FA5L7VvjdrKJqLkEn/7b0cddBRauhc9ZCKZeHYZbRviaoJxZKBR1LpknvNpDXdJgHNlVGqQD2vgm9UIa1X0etRHFqNJ7iNA/t0OTRQXNNR75YRnWzTPHrxOIj+3Xk40+qu1yP/mQSkBLhmrtdvvqsdQ9rMAsm9i6UVeGZTEFsdeBGDlnwBjQVBMHuUEnRX/Ygc3gC7mMfVs5AXfXtNKdgD38uQf9pEILicMmnWcdA3RjXFO+d+E0KzizotAg9aUN+V2n3RX5ZbOs6tk+lgY/eSx1GQ1kQn8VXQvtG9P+hEuHqy2z1RaPMyS+XYB0Nxy/lcE3KGNFnCigQGmudKaCYLtmkxrYRXA4+H8uMAP0dDasH0R4JddtBObdH0ZE43IT3xBRctVEmu/pF2PdOqtDWJs8NHgvB5Lpuw9Sq6D6EXanBLu3k48mdPK/mq7l3PVgrOmpvxSqLGtxRMiWcdHki47gEdDnJEG4LnQZluRbLWsrnznpsccUC6xrtCGYi4Ep/qrzzNqxNKgkFQ4xR7K5aMFR4PHOVufI5iTKhNFbapnjMqfngkjiU3UHYmQk3ls1Mfg+1OFzq6xsd2Cc1qqeUkRHfEG75jTM+bKImjBLhUkmixdLX9jC4mWUX1lytWEV9fw/W93keQ1TW+Jws9KfeS+3jm2Sm5oTr00FFQPbFFkqCO6KxOQ3VE7UQ0pTOWe0b23K4K1QveV0OYRqvx2XAbtC1b6sb1egpJcHlC7iKplpN4naBjT3TQu9G3hZib+D25ONS9BegRLgTmXM3RH+fDhTawlHwSXBJ7lEFOjuM5AHgD1AvEjxaFLn4YVlQrmJU60oaHRoy46m+VnJ0SrMYZFY9OHS1Er+T4IrSEx1OIw/9XboZqHbsQGOLOnPVwuzXipS9cl78ajecvdCfUCLc+BeauVlH90rZGzPgsgCdwwqWKIPD8XmUGv2JO/AUXJLzmiZFHylDYccOo9oyZbCMoUAH6qkYkQSX5B5X6fol7cto/jZA64Vq56H3amnskze6uq1RNkc3CFqURmnsh/2/0YKzmLKwIPGL/r+vVVL840LW2nkUzLZn92mT11gRG9+V4utTuSpyLSj+dOD+B8V2TPmX6Q8C52B1fIdesJ4NXO+YzoPiNtrnQ3jyLDko07WNrmfx6+OC9GzgMnkXHbR2quEddtNC68ieOA8WrWcF90srg5uiMrgpKoObojK4KSqDm5qAvwFERrJLe3nmpQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="Input 'Select'" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" DesignTimeRectangle="165, 438, 788, 317" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;ac-root&amp;gt;policy-create-root&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;div&amp;gt;div&amp;gt;ngx-select-dropdown&amp;gt;div&amp;gt;div' idx='2' parentid='Brokage' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ngx-dropdown-list-container ng-star-inserted' parentid='Brokage' tag='DIV' aaname='' /&gt;" Guid="22c98e57-8a54-4f1b-b886-d41a00ba41e9" InformativeScreenshot="c3ed23455175f09289d7101e013f9f9b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="198f30fb-cf00-4eab-a098-2822640cf22a" CvElementArea="164, 758, 787, 40" CvType="InputBox" DesignTimeRectangle="178, 763, 724, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='Brokage' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='Brokage' tag='SPAN' type='' class='display-text' aaname='Select ' check:innerText='Select' /&gt;" Guid="0aaa974a-cf6a-470e-80a7-45de1fe8cfc2" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:VerifyExecutionOptions.Target>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INSURED INFORMATION'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="086a5be2-c507-4805-896a-f2861a00b8fa" CvTextArea="175, 465, 67, 16" CvTextArgument="Search..." CvType="Text" DesignTimeRectangle="178, 456, 738, 37" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='search-text' tag='INPUT' type='' class='ng-untouched ng-pristine ng-valid' aaname='' /&gt;" FuzzySelectorArgument="&lt;webctrl name='search-text' tag='INPUT' type='' class='ng-untouched ng-pristine ng-valid' aaname='' /&gt;" Guid="e614a79a-5f57-4844-99e9-351e75a8cdb1" InformativeScreenshot="d080ea16a2ec4b169606c536065bfcca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CVScreenId="086a5be2-c507-4805-896a-f2861a00b8fa" CvTextArea="163, 366, 240, 19" CvTextArgument="INSURED INFORMATION" CvType="Text" DesignTimeRectangle="165, 365, 1587, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sub-header' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sub-header' tag='H2' type='' aaname=' INSURED INFORMATION ' check:innerText='INSURED INFORMATION' /&gt;" Guid="5126e6fc-acdd-48da-a2e7-76ea48840142" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INSURED INFORMATION'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Text="AON Group Limited, 122 Leadenhall Street, London, EC3V-4AN" Version="V3">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="a230b054-e548-47ac-b087-c94b4c4b86bb" CvTextArea="175, 465, 67, 16" CvTextArgument="Search..." CvType="Text" DesignTimeRectangle="178, 456, 738, 37" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='search-text' tag='INPUT' type='' class='ng-pristine ng-valid ng-touched' aaname='' /&gt;" FuzzySelectorArgument="&lt;webctrl name='search-text' tag='INPUT' type='' class='ng-pristine ng-valid ng-touched' aaname='' /&gt;" Guid="30710366-327e-481b-8ab2-51d468332592" InformativeScreenshot="8066b2df488d392ad528500fe7918ced.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target CVScreenId="a230b054-e548-47ac-b087-c94b4c4b86bb" CvTextArea="163, 366, 240, 19" CvTextArgument="INSURED INFORMATION" CvType="Text" DesignTimeRectangle="165, 365, 1587, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl class='sub-header' tag='H2' type='' aaname=' INSURED INFORMATION ' /&gt;" FuzzySelectorArgument="&lt;webctrl class='sub-header' tag='H2' type='' aaname=' INSURED INFORMATION ' check:innerText='INSURED INFORMATION' /&gt;" Guid="66589f18-b1c7-4fe5-9e77-5440d0a3e34c" SearchSteps="Selector, FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AON Group'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="ec33143c-f1a2-4066-9c71-c052090243be" CvTextArea="198, 519, 434, 15" CvTextArgument="AON Group Limited, 122 Leadenhall Street, London, EC3V-4AN" CvType="Text" DesignTimeRectangle="200, 515, 433, 22" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ng-star-inserted' parentid='Brokage' tag='SPAN' type='' aaname=' AON Group Limited, 122 Leadenhall Street, London, EC3V-4AN ' /&gt;" FuzzyAccuracy="0.89" FuzzySelectorArgument="&lt;webctrl class='ng-star-inserted' parentid='Brokage' tag='SPAN' type='' aaname=' AON Group Limited, 122 Leadenhall Street, London, EC3V-4AN ' check:innerText='AON Group Limited, 122 Leadenhall Street, London, EC3V-4AN' /&gt;" Guid="7583bd16-28f7-4ce6-8dcb-19a1ed63efd8" InformativeScreenshot="60e21ac2beff51b7812da78ed95e168c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                <uix:Target DesignTimeRectangle="178, 445, 763, 48" ElementType="InputBox" FullSelectorArgument="&lt;webctrl type='' parentid='Brokage' tag='DIV' class='search-container ng-star-inserted' aaname='' /&gt;" FuzzyAccuracy="0.92" FuzzySelectorArgument="&lt;webctrl type='' parentid='Brokage' tag='DIV' class='search-container ng-star-inserted' aaname='' /&gt;" Guid="0051d876-47c8-43e3-a142-5a670394a1fd" SearchSteps="Selector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NSelectItem DisplayName="Select Item 'Underwriter Name'" sap:VirtualizedContainerService.HintSize="354,191.33333333333334" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="[Row(5).ToString]" ScopeIdentifier="aae7c3f5-af1d-4d4f-9452-66f9dfb9f9cf" Version="V3">
+                                        <uix:NSelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="3">
+                                            <x:String>Select underwriter</x:String>
+                                            <x:String>Scholl, David</x:String>
+                                            <x:String>Vu, Ricky</x:String>
+                                          </scg:List>
+                                        </uix:NSelectItem.Items>
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="83a102cb-4d27-4356-b1f2-ee33507c64a4" CvElementArea="163, 890, 393, 47" CvType="InputBox" DesignTimeRectangle="165, 893, 389, 43" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='inputState' idx='5' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputState' type='' tag='SELECT' class='form-control ng-touched ng-dirty ng-valid' placeholder='select UnderWriter' aaname='Classification' /&gt;" Guid="ef8cc291-2724-4886-856b-30fdad2e64ba" InformativeScreenshot="b7aa38b42a84cafef114a6c2511eac1c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="83a102cb-4d27-4356-b1f2-ee33507c64a4" CvTextArea="163, 867, 133, 16" CvTextArgument="Underwriter Name" CvType="Text" DesignTimeRectangle="165, 861, 142, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Underwriter Name' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Underwriter Name' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Underwriter Name' /&gt;" Guid="61cd6eb0-555f-47fa-99a3-3c0e8a53253c" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" ContentHash="_HFn2ltCk0ChAzp27gOzXA" DesignTimeRectangle="1609, 969, 143, 47" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='nav-tabContent' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-tabContent' tag='A' type='' class='btn btn-primary pull-right' aaname=' Create ' check:innerText='CREATE' /&gt;" Guid="9b46fb56-2ed6-4763-ba08-6f3061e32003" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJMAAAAzCAYAAACT+Tr7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJiSURBVHhe7Z1NTuNAFAY5x1yT62Q9d2DBnhNEyn5A7CIWSEEI9cSRP/u5/9zOy2CPqJJqg91Wky7aJhvfBYAbQUxwM4gJbsYQ08OfU/j1+zXc7Z4Rm+x66boRQ0yEhNfYdSOGmHInIrYoiAndCmJCt4KY0K0gJnQriAndCmJCt4KY0K0gJnQriAndCmJCt4KY0K0gJnQriAndiv8ipvuXr36WhuN7eu7hsz9YZn9YPiaEr/D4FI27+B72/Rn5c97C40d/eIb9ofHc3O+9smLjMdnFyvEZdvb8pjDO6/HytnBMIaZo7OS6F4lpIzZ+uB+ncK8xjTFNInTEtDv2h4Wdy0Vi2oaTRY52oKdTGNfRLPQwJr/44+2yfUxRM4f9cZxrchudOO601V1sg8HUFJuNafyrj0KSlwiiAL4xpvFa3fxaQyCmFbzygx3CmGHprTGZQzq/aVz2XGtjTEUW7p7fpPiBMZV2swrxHOwtTrc187M0FElMK/gvYqrdLmeI5pA8eMckD+KSmFbxZs9Mk1gy18qNqToGUSP/IM4z0zrWIpj8N2cWrhSGvVa8ayyNaTKvCtkgiGklW7b9M9mH6TQM+y36ZCEb49CYuR2zftx7m+so7NQrKjYcU+fcLaW0A+V2GbtY5viSmOyOWNo9zPXSYIhpde2uMpBbzGpMZ20M2tEWxGTnUf5y0vwBJA/ixIRYVRATuhXEhG4FMaFbQUzoVhATuhXEhG4FMaFbQUzoVhATuhXEhG4FMaFbQUzoVhATuhXEhG4FMaFbMcTEu1PwGrPvTuGtTrjUrpfsW50AfITwF5DdyKKMBPAUAAAAAElFTkSuQmCC" InformativeScreenshot="8500739cb0643d8e2ec59ccfbe640378.png" Reference="H4z47meBBEGgAL5h77tv3Q/UuCXXzAhrEeIqH7hK7r8Gw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="1442, 969, 145, 47" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Cancel' parentid='nav-tabContent' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' parentid='nav-tabContent' tag='A' type='' class='btn btn-primary pull-right mr-3' check:innerText='CANCEL' /&gt;" Guid="90df0660-a8ce-487a-bdae-c8ac0e94346c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJUAAAAzCAYAAACe50q8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJ7SURBVHhe7Z1NTuNAEEY5x1yT62TNHWaRPSeIlD2DZhexQApCqMedyWdX//kvNYoHvU96C3DZlFyPdgcWfgiEOAepiHuQirinl+rnyzn8ePodHna/ABYRvYn+KL1UCAW3EP1ReqlqhQBLUJAK3FCQCtxQkArcUJAK3FCQCtxQkArcUJAK3FCQCtxQkArcUJAK3FCQCtxQkArcUJAK3FD+C6keX7+uXZqc3qu1A+/hcC0N4Svsn2s1HcfPa02XyjV3p+uxj3N4zI5FZvdmf04zps++fqT3jaFsXCorRi2fYVc9ryMb4un1bUZdOcC2VAt7Q6ot8Bb2H9fmxtJYQXoZlEZdMeysri7Vit6QagMkQ8h+65/PYXCmctPN8cNpuM7hmNVFKsO2dVWp1vS2VBKk8mdYaRqPuMtNr9/wYZ8TzzWryuy9zvAza1Kt6g2p7s2ECKOU56aSZfV2eMdhldEerJRqZW9VebPY6yGVNzdIZR99eoyZ7xUb9mx4wyqUfY1UkyjfTqpBikbs3ihSDM98qutq90g1G+Wb7ammPub/TbJhrwyv+rcnI+Oq3pZKglT/gP6mxmTDSz5hGUmSc0YyuSKY1UixK9xNvSHVHakMtpYFK0j1eGt4iThdrFQreiuu10i/55tTn/R0f5QNSxWZepwZEewK0drrmEGVwytXhGR/VgxwQW8RpNoWc/6/ZmuSPVNCugm/DGREqkTUxgDn9HYBqQCWoyAVuKEgFbihIBW4oSAVuKEgFbihIBW4oSAVuKEgFbihIBW4oSAVuKEgFbihIBW4oSAVuKEgFbihIBW4ofRS8W4auIXqu2l4ixasJXpTfYsWIT4J4Q/7FbLpP4Z3NwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                              </ui:ForEachRow>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="nOD08oyNgECjVOrQ8I-R4w" IconBase64="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" InformativeScreenshot="ef198f0cae330e98273696d0f6934e62.jpg" Reference="H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw" Selector="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" Title="Houston Aviation - NEW VER" Url="https://hcaazqa.hcc.com/uw/create-quote" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:ExcelProcessScopeX>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="800,1965.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="Counter">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" Value="2" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome: Houston Aviation - NEW VER" sap:VirtualizedContainerService.HintSize="642,1854.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="78e02548-b448-4b61-890b-4f85faab11ba" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1612.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="CreateQuoteMessage" />
+                <Variable x:TypeArguments="x:Boolean" Name="VerificationResult" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="546,341.3333333333333" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Contains" OutputArgument="TextString" Result="[VerificationResult]" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text 'hcaazqa.hcc.com says'" sap:VirtualizedContainerService.HintSize="334,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="78e02548-b448-4b61-890b-4f85faab11ba" TextString="[CreateQuoteMessage]" Version="V3">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="624, 128, 694, 330" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;ctrl name='hcaazqa.hcc.com says' role='dialog' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" FuzzySelectorArgument="&lt;ctrl name='hcaazqa.hcc.com says' role='dialog' /&gt;&lt;ctrl automationid='' role='pane' /&gt;" Guid="b9b0e26d-8fda-47e4-9a89-24182665353f" InformativeScreenshot="cb4e042b5b9113bfaf5f587c3720512a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Houston Aviation - NEW VER - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap:VirtualizedContainerService.HintSize="334,25.33333333333333" sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object">
+                            <VariableValue.Variable>
+                              <Variable x:TypeArguments="x:String" Name="_autogenerated_TextString" />
+                            </VariableValue.Variable>
+                          </VariableValue>
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">["Quote Number"]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uta:VerifyControlAttribute>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,179.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[VerificationResult]" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="546,1004.6666666666666" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,811.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[VerificationResult=True]" sap:VirtualizedContainerService.HintSize="450,618.6666666666666" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,223.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:WriteCell Cell="[&quot;G&quot;+Counter.ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="354,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Data" Text="Pass" WorkbookPath="InputSheet\TestDataSheet.xlsx" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,223.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:WriteCell Cell="[&quot;G&quot;+Counter.ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="354,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Data" Text="Fail" WorkbookPath="InputSheet\TestDataSheet.xlsx" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">[Counter+1]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="nOD08oyNgECjVOrQ8I-R4w" IconBase64="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" InformativeScreenshot="ef198f0cae330e98273696d0f6934e62.jpg" Reference="H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw" Selector="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" Title="Houston Aviation - NEW VER" Url="https://hcaazqa.hcc.com/uw/create-quote" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

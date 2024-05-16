@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Insured Contact Search",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "XYGWaEGWCUajDAYEPCwSpQ",
+  "Reference": "H4z47meBBEGgAL5h77tv3Q/XYGWaEGWCUajDAYEPCwSpQ",
+  "ParentRef": "H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw",
+  "Created": "2024-05-09T06:53:09.6763227Z",
+  "Updated": "2024-05-09T06:53:09.6763227Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

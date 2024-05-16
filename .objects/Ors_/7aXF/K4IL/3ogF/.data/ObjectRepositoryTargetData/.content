@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hniYRpnqkkaK-KquPgLfPw" Reference="H4z47meBBEGgAL5h77tv3Q/3ogF84x5TU2D02Z47xAceQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://hcaazqa.hcc.com/uw/dashboard" CVScreenId="7209b963-bd09-4cd4-a96e-b26e0b459053" CvElementArea="989, 744, 778, 49" CvTextArea="1284, 759, 190, 18" CvTextArgument="CREATE NEW QUOTE" CvType="Button" DesignTimeRectangle="992, 746, 777, 47" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-YTD' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-YTD' tag='BUTTON' type='' class='btn btn-primary w-100 mt-4 dashboard-btn' aaname=' CREATE NEW QUOTE ' check:innerText='CREATE NEW QUOTE' /&gt;" Guid="919818bb-57ea-4f82-b31c-752af6d1034b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="7209b963-bd09-4cd4-a96e-b26e0b459053" CvTextArea="1482, 250, 111, 16" CvTextArgument="DASHBOARD" CvType="Text" DesignTimeRectangle="1475, 237, 128, 46" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='navbarCollapse' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='navbarCollapse' tag='A' type='' class='nav-link active' aaname=' DASHBOARD(current)' check:innerText='DASHBOARD&amp;#xD;&amp;#xA;(CURRENT)' /&gt;" Guid="0a0f808c-eebb-4d46-9161-4ef50b231f4e" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a75f5a515fe97c1245ae67dd5e48bc1c.png" xmlns="">0dOYXvwIpUE6OH3Tn_jJe1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

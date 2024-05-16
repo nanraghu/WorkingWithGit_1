@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click '8070728'",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "gUzvikylZ0S3I3idgxBQSQ",
+  "Reference": "H4z47meBBEGgAL5h77tv3Q/gUzvikylZ0S3I3idgxBQSQ",
+  "ParentRef": "H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw",
+  "Created": "2024-05-09T18:39:07.0233965Z",
+  "Updated": "2024-05-09T18:39:07.0233965Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
