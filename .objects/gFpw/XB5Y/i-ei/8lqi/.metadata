@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Brokerage",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "8lqih0qr3EKD88uVjJ3JvA",
+  "Reference": "H4z47meBBEGgAL5h77tv3Q/8lqih0qr3EKD88uVjJ3JvA",
+  "ParentRef": "H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw",
+  "Created": "2024-05-09T19:14:08.8100451Z",
+  "Updated": "2024-05-09T19:14:08.8100451Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

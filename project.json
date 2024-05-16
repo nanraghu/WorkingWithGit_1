@@ -1,0 +1,81 @@
+{
+  "name": "HAVUW-Assignment",
+  "projectId": "da0f94ce-9d64-480e-a861-0622ad48e771",
+  "description": "HAV Underwriting Portal",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.Testing.Activities": "[24.4.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.4.0.0",
+  "projectVersion": "1.0.17",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "17673bbf-dd65-4c1f-8246-5985c5c8b1bd",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "37ecdbbd-77d8-4778-929c-52e5b7a2e861",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_01-LoginScreen.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "310ad49e-e4f2-459d-b9cf-fe15894b9c3c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_02-ClickCreateQuote.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4ce5a407-e882-4ff6-b0fa-16c9cecc03e3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_02-CreateNewQuote.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

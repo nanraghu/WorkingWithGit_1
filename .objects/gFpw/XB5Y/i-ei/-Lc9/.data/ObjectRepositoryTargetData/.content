@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RaVq3otJ10GozIFRP3JqPA" Reference="H4z47meBBEGgAL5h77tv3Q/-Lc9Uce7KkuUedKjr9qKHg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="a3049ac0-f203-4b4c-9cbe-461a463b248a" CvTextArea="198, 472, 508, 15" CvType="AnyWordGroup" DesignTimeRectangle="200, 469, 506, 22" DesignTimeScaleFactor="1.125" ElementType="Text" FullSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;&lt;webctrl class='ng-star-inserted' parentid='Brokage' tag='SPAN' aaname=' AeroRisk Managers, LLC, Michael O&amp;apos;Neill  P.O.Box 631422, Littleton, 80163 ' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ng-star-inserted' parentid='Brokage' tag='SPAN' type='' /&gt;" Guid="40b7df63-02fe-42c1-a3ef-8bfdbfbdbba6" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="176cb69030631f1d04f3be8107bc3517.png" xmlns="">0Zk--6uKxZkmpM7zLHh6iiQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

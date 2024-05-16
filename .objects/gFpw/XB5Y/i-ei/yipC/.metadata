@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Department",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "yipCIrQSs0GBC8-6lSB68w",
+  "Reference": "H4z47meBBEGgAL5h77tv3Q/yipCIrQSs0GBC8-6lSB68w",
+  "ParentRef": "H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw",
+  "Created": "2024-05-09T05:05:19.5464874Z",
+  "Updated": "2024-05-09T05:05:19.5464874Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

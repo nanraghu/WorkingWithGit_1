@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4bXYsSajmUK0BGlsaZCevg" Reference="H4z47meBBEGgAL5h77tv3Q/yipCIrQSs0GBC8-6lSB68w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://hcaazqa.hcc.com/uw/create-quote" CVScreenId="011da45b-3312-404e-81cc-e2bf1cdcba19" CvElementArea="961, 485, 392, 47" CvType="InputBox" DesignTimeRectangle="964, 488, 388, 43" DesignTimeScaleFactor="1.125" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='inputState' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputState' type='' tag='SELECT' class='form-control ng-touched ng-dirty ng-valid' aaname='Classification' /&gt;" Guid="d0fd94c8-fb75-4350-b063-d129c7618fa6" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="011da45b-3312-404e-81cc-e2bf1cdcba19" CvTextArea="963, 463, 95, 18" CvTextArgument="Department #" CvType="Text" DesignTimeRectangle="964, 456, 96, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Department' parentid='nav-tabContent' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Department' parentid='nav-tabContent' tag='LABEL' type='' class='' check:innerText='Department' /&gt;" Guid="2d94cf8a-3c56-4519-aa86-95ed188c76d1" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9f80d80cfe822925a056be14c0a722ce.png" xmlns="">0EVbEM5TY-kijY2wV6lI8ig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

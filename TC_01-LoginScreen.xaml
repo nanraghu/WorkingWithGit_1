@@ -1,0 +1,287 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase1" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="648,794.6666666666666" sap2010:WorkflowViewState.IdRef="TestCase1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestCase1" sap:VirtualizedContainerService.HintSize="658,730" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="URL" />
+      <Variable x:TypeArguments="x:String" Name="Uname" />
+      <Variable x:TypeArguments="ss:SecureString" Name="Pwd" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="596,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="HAVUW-URL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="TMHCC Automation" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+        <ui:GetRobotAsset.Value>
+          <OutArgument x:TypeArguments="x:String">[URL]</OutArgument>
+        </ui:GetRobotAsset.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:GetRobotAsset>
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="HAVUW-Cred" CacheStrategy="None" DisplayName="Get Credential" FolderPath="TMHCC Automation" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[Pwd]" Username="[Uname]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:GetRobotCredential>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="512,1225.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome: Houston Aviation - NEW VER" sap:VirtualizedContainerService.HintSize="450,1137.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="3f243c11-ed6a-432d-8211-69fab06d0d18" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,895.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="[Uname]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/login" CVScreenId="dfc190a7-9e46-4907-8053-e592cc63eb5a" ContentHash="f0sw8x-6xEK88BlGP3_-nQ" CvElementArea="791, 563, 359, 51" CvType="InputBox" DesignTimeRectangle="795, 568, 352, 43" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='okta-signin-username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='okta-signin-username' tag='INPUT' type='text' class='' aaname='Username ' /&gt;" Guid="fe640bc0-5399-4a00-9ed7-d7bf25ce6d12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWQAAAAvCAYAAADU87A7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMOSURBVHhe7d1PS1RRGIDx8zkEEf+t3PuZ/DAl6qCNFkkREgS2MlcuBBH/L1uVSiaiSSWOzoybt/tMN6dNLe+5i+cHrzOc0e3D5cy53vTx9iEOf3Zj63s3Nr5148NVJ95ftOPdeTveFvPm6328PmPa8aqY5S/3j/OyWHccx3H683cjaSbtpKG0lKbSVhpLa2ku7aXBtDjt/3iIzeturBcfrl50YqX45eXijxdPW7FQTOP0LmaPWzH9+fc8/XQbT4rX3vDecRzH6U/ZR1r5p5s0lJbSVNpKY2ktzaW9NJgWJ96sXbZjauMkJpp7MTCzHYONnRia343hZ/sx0jyI0aXDGHvOHMX4i8MY59VxHMf59xStpJm0k4bSUppKW2ksraW5tJcG0+JEnVmYnNuKo/ObkCRVg+bSXhpMixOXzFTaGEtS9WgvDabFiX0MLp0lSXnQYFqc2FxmP0OSlAcNpsWJb/zYZJYk5UGDaXHiGAbf/EmS8qDBtDhxNo7jGJKkPGgwLU4cWOaMnCQpDxpMixN3kXBwWZKUBw2mxWWQj8plSVLVaHAvyNxvzS1+kqQ8aDAtTvwTDO67liTlQYNpsUGWpMz6QWbLwiBLUja9IPe2LAyyJGVlkCWpJgyyJNWEQZakmjDIklQTBlmSasIgS1JNGGRJqgmDLEk1YZAlqSYMsiTVhEGWpJowyJJUEwZZkmrCIEtSTRhkSaqJfpB9YogkZdULso9wkqT8HoPsU6clKa/Hp05PF1Ue8wpZkrKhwbS4DLJXyJKUCw3uBXn2uBWjSwZZknKhwbQ4NU7vYqR5UC5LkqpGg2lxWjhtxfCz/XJZklQ1GkyL02LxY2h+t1yWJFWNBtPitHx2H4ONnXJZklQ1GkyL08p5OwZmtstlSVLVaDAtTqsXnZho7sXR+U35kSSpKrSXBtPitH7ViamNk5ic2zLKklQhmkt7aTAtTpvX3Vi7bPcWqDSXzuxnsMnMN38cx+CMHAeXuZuEW/y479pxHMf5zxStpJm0k4bSUppKW2ksraW5tJcGb1534xeUETm59iIIogAAAABJRU5ErkJggg==" InformativeScreenshot="f0d466bedc43f01125935ca045e79850.png" IsResponsive="True" Reference="H4z47meBBEGgAL5h77tv3Q/iwk2JTWYBUyX8tbOCkEPLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="dfc190a7-9e46-4907-8053-e592cc63eb5a" CvTextArea="792, 543, 82, 13" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="794, 541, 85, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Username ' check:innerText='Username' /&gt;" Guid="97b4638d-f406-4a83-bdcc-cb827d7c4428" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAWCAYAAACrBTAWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUuSURBVFhH7VbfSxxXFPYfWZumfVD60HSF/khQIkTxwaIhDQv7IiosKqgpqaQUsTSyQosPq1iMCCYspLIB3d3SGCHRLaG7D7r7kHYeAga2rBDMgJQJ0k5r9Os598fuzKitwdan+eDbnXvuuefc+905904VfPzv8EU+BfginwJ8kU8BvsinAF/kU4BbZNuCZRFt1fZC9du7qu3jWHCJbKY6EQi8iUjKVBY3dP9kQRl8HAu+yKeAE4tsPzewlBjHzPQ45h8UsLGtOjR2TRirCdyh/plEGvmipTokSg95bBx5NpscSz0Xl2XMAjU4xoO4aN9J5VByhyDYNDSD5JyehwHTdaRZyIs5LqPErWJO+s4lkHXOR+Rnv1kkCyWKehBWsVDxWfXmORwnEtn8oRNBagfqmxC6VCP6AsEbWNmR/bYxi0g92cgevPQ+znN/oAahqUJ5AfkY2zpJvCjaRX8nks+poxAV4yLxBCbbZIwyg+SzKcfDXMaQyuFifQ+WOI6AiWQP26NI0hrEnMusQX+qBIvyyfwVtkcztD0aJax81arGvotGvV7Oo+dyBE4gspp4eBYbopdgl5BdU62dDEaD1N82gpVyOAvG9BWK0YAZQ1qkyMwmDCcK9JbSxcodSmQWoWMqgw2TLl1605IjTcIejOlyspBNJGA4Kqi0IIVsmVVJyiLzfG4gaZjiAi+tjihhG9DSdgWTWRKb7KYRRz/P3THP0l2eN23IXaMi/GYawy3kdz3t2IyDOJHIS4M8ERInRYk9tWU9HBS+o4+9RZfDN2TXAmiRIwtcyA5okb0L2E5jiO09CZqBE7b8MmJuL2OUfb5YVmO1yBXRJGxkoyq/Z82lhbCwy7UamGExw3Fx3Dgh/Qax8g8qu0S2H48cmlDDnZhAO1kp1Ro0do4g+UyKakxxOZEt1IpQ2MkmeWyoN1GKHK6Uv4Y+Lrzio4BJHq9F3tlAslzGHpY3onJc5EW7Apm/FfNFZVBwvVBmGv0cj49F11qI4thQR9wRcImMJ+OyzKZd262gd907Ib500piPhqV4QdpVKl29IUPxHLLZQ/hMbr0+kw9MUot8YMPdIudjvEgq9dUNmPpNtjKiWo4v8sH87qqV1RcIR7F02FqyBZjegnXALbJNwfgscl4sCra+GNoqZ7C17a4R15tuTKGFnlvGc/KMLYPK2nF+nkxkfS94yrgYR0fZh3FSkS0sXVd+3orjTVWPR8EtMqEsZvU5tH/2JW7RJ9HN/g8QrD5LtmZMFGzsk98+n43VtQh9Po7F1Rx+yqYx0VVLPp/gO3rT90nM9Vgztc/ifG9U+tBn2M3ecwjUXcMjEprjrMc4bhcWaZEiriaLTGNZZJedRJ7gufQm8ILav8xyjlq6HNM0hxwe0VdKpIFjVnz2SeTFXrZFse6KdXT+F6kuEWOCRBa2zQT668i37mMMzXGuDBanryFEthDdL86xXgqRdWOPfvbo/7enacQGPkTwjbcQEHwP7UNjuE/nLfdL2vg18y2GLgdRfeZtwQuX+3D7ieXwsfDzvU/RcVH2V595B40DFOdpxWdtgu3dYpGVccTCmBgTSZtuO4vMsfruYYvbuyXcH7uKC2oOdc3duLX2Pb52+rDIfdw/hjVXrKPzb6W7RTwWuWzf/BETAx+hTuWqvngVw7dz2KJvZedYL6u8Avv871nlNbyiH+Yuie7lX7QTPl+fQuRXLKISlo1/0jPTpvYf1JbkZw9poM9/Z5UUlgTVQpLxd+KO4ktS/yX/K1rU9vk63MPfKIuWTn5NWPwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_6" SecureText="[Pwd]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/login" CVScreenId="dfc190a7-9e46-4907-8053-e592cc63eb5a" ContentHash="FB8OmXdPMUmEMEBL2NOOcA" CvElementArea="791, 685, 358, 50" CvType="InputBox" DesignTimeRectangle="795, 689, 352, 43" DesignTimeScaleFactor="1.125" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='okta-signin-password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='okta-signin-password' tag='INPUT' type='password' class='' aaname='Password ' /&gt;" Guid="1cc6b5a9-8e76-47ee-af9c-abf1b6bc810a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWQAAAAvCAYAAADU87A7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAErSURBVHhe7daxCQJRFERR+8fYZENhMzvZwDYWi/gyH1awANcJzoFJXgGXdxkAVBBkgBKfIG/bcyzLfVyvNzMzO2Fpbtp7mEHOYV0fY99f8wjA76W5ae8R5RnkVFqMAc6X9qbBMYOc1xmA/zgaLMgAfybIACUEGaCEIAOUEGSAEoIMUEKQAUoIMkAJQQYoIcgAJQQZoIQgA5QQZIASggxQQpABSggyQAlBBighyAAlBBmghCADlBBkgBKCDFBCkAFKCDJACUEGKCHIACUEGaCEIAOUEGSAEoIMUEKQAUoIMkAJQQYoIcgAJQQZoIQgA5QQZIASggxQ4ivIy3If+/6aBwDOk/amwTGDvG3Psa4PUQY4UZqb9qbBMYMcOaTSeZ3NzOz3S3OPGI8xxhszXXDfNgd71QAAAABJRU5ErkJggg==" InformativeScreenshot="6fa1d3a2e07ec98fa0fd04ccb7833d97.png" Reference="H4z47meBBEGgAL5h77tv3Q/_rFsMbieqUKQs735ZRfzOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="dfc190a7-9e46-4907-8053-e592cc63eb5a" CvTextArea="793, 663, 75, 15" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="794, 662, 79, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password ' tag='LABEL' type='' class='' check:innerText='Password' /&gt;" Guid="e3889a55-5f29-4017-9dea-65ac8e32f910" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAWCAYAAAC8J6DfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARrSURBVFhH7Ve/a9taFH7/SIZu3gIaOgQaKLyAB4MDGQwZYjw0eHjBQwiBUAwlGErwYILBmMAjGIrRZAceciG4gYI0FHsoaJOhoIIHgwdBBkGGr+fo3qsffm6GRJ2iDy5I5/4657vfOVf6CxlSQ0ZmisjITBEZmSkiIzNFZGSmiBUyfXie9//my+4XiwXGHwoo7V/BlpZ1SJI513G48Qoba9rWQR2D2UtldYFBlXloYCIt67CezIMaup1m1Br72GK7VoExl2NfFJ5DZmsqDRH8r3Vo1Ff65EgL2eY2xsMrQbh+A3shO0L4WNg36AeH0oMxdeA9yC7G0oEp518P72DPSfm+DYPHD22aHYeLcbDOZ0QeCDi3bNdh30tDYl0LzlLaFbyp8OnW5Re4po7r4FnAm1kY/Ct9DoJKmcxk3wLG6WZYAqK2iZORYpTG1HKBfatYwFtNjNE+3AUk+d+b2OU52muUimqtAq5nHoxjfq7DjLP5o4dSMCaHy4R7U1zy2lWddvTh6FWRRYlGfulOdDgqlqaOgfRRxOVj0tpZmUv+Hzdx8Y6f0yJTBqO1RZ9n9jCwveA5wE8dRxxUvi2KtFyr1Isr2cJkJp4nLXbuFGOlpgcPtmmTTmgcZQEHcf41YtP9VCBbDhrtke/EroFpI8iYk5EXZo9WacJklRN4z8sKE5aL1lNxyrHj2QIe+eHd1uT8NiZKzUsbfUX4s8l8oBv+p3Jom1QRlws5G976dOM1eMMaxszI4gZHvFbxlEhnzSRht0WA5bYFVxGq4Fu44INpCBVTIqO/T+9nOoyPNE8dGGHS4nWqMJYexme8fwWD1bqu4jr7HBxW+J4ncsK9OZN4/h76P6RJYXmDkyeTubZR4FeqjlE6DU9RkqmbbFEw7n+xlKN0Ljd0OMr5e0rPkjpxLgVVdL9FRVeQJFOdsqJMY97fkvpMVt82ugGbNrp5mh+QLtN9v0fVdRXyMLRmIms2mlbQKyDnxw4qgovBk9N89Tbny0WmTQCZWuXWHZxF9D06/sgbrijDd2GPejivirqoKXVIBMW+U5MHsyNJItht5Gk8p6ar70XEyqDzdLBiTA4XQcdjAZPSOa53uiBaxZkoZ4/Nl4f27DRfg8WwQgsXVtKBTv+AN1RkMsFBh0TSWZ/SMoFvDep7hcOhUqdSXQ99vknDlJeqJQX1O9uktuiisvmdyH0fXoIC3hdRS8Na+5s41fyjYVLbqhb/ETJZEXwTc/E2TAvmFx2XUnmKTG9UpUALOKFPljGPGTVRZvUdcBoKoraqdfRH1GfeoV/nW1SpTEAoktdMXkYqM9ieuIy4dBTZvolDOgTDpM8y9Y1cJCJUifldnHOq80GGrMzXdrD7p5TJcEd1lN/wBtSoHh51LBhNfpfKvOfvwip21RhycPeYfsekIL3vlPqV1yEp2t97OB+tVDtZK+PqE1Bpp2pnDJ6NQWMv/BQLa3U8ER6Lc2mh+0/kl/jzc57wnZnhWcjITBEZmSkiIzM1AL8ADfSYTbN3DbgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0.7" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="354,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3f243c11-ed6a-432d-8211-69fab06d0d18" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/login" CVScreenId="dfc190a7-9e46-4907-8053-e592cc63eb5a" ContentHash="g3SKCmNb5UaWnkLnLVv7jg" CvElementArea="792, 813, 355, 60" CvTextArea="942, 834, 55, 19" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="794, 815, 354, 56" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl id='okta-signin-submit' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='okta-signin-submit' tag='INPUT' type='submit' class='button button-primary' aaname='Sign In' check:text='Sign In' /&gt;" Guid="4220861e-dcf3-47a7-a857-1600e6037999" ImageBase64="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" InformativeScreenshot="499b1ee6e67ffb5bb87836061401b501.png" Reference="H4z47meBBEGgAL5h77tv3Q/5EywGX_aTUCrQbL7Ocgxdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="dfc190a7-9e46-4907-8053-e592cc63eb5a" CvTextArea="792, 901, 157, 15" CvTextArgument="Need help signing in?" CvType="Text" DesignTimeRectangle="794, 900, 155, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='link help js-help' aaname='Need help signing in?' check:innerText='Need help signing in?' /&gt;" Guid="19d03fa8-6955-4493-97ed-85906c1564d8" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="Button 'CREATE NEW QUOTE'" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Target>
+                      <uix:TargetAnchorable BrowserURL="https://hcaazqa.hcc.com/uw/dashboard" CVScreenId="0cd8d362-906a-440d-8fe2-8b1ce986ac44" CvElementArea="977, 822, 778, 50" CvTextArea="1272, 837, 190, 18" CvTextArgument="CREATE NEW QUOTE" CvType="Button" DesignTimeRectangle="980, 824, 776, 47" DesignTimeScaleFactor="1.125" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='nav-YTD' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-YTD' tag='BUTTON' type='' class='btn btn-primary w-100 mt-4 dashboard-btn' aaname=' CREATE NEW QUOTE ' check:innerText='CREATE NEW QUOTE' /&gt;" Guid="01a0be3c-8918-49ff-986a-614813a8055d" InformativeScreenshot="c075a26f81bf9133b4fb1078cd18fe7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:VerifyExecutionOptions.Target>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="aLWpInb6JkS7gfxIShOjyA" IconBase64="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" InformativeScreenshot="b211ef3cc7ac25d86d94ccebeb11776b.jpg" Reference="H4z47meBBEGgAL5h77tv3Q/oH2dcbMm-kqZ4iSjWEfN7Q" Selector="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;" Title="Houston Aviation - NEW VER" Url="https://hcaazqa.hcc.com/uw/login" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="596,527.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="Output" />
+        <Variable x:TypeArguments="x:Boolean" Name="VerificationResult" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="534,249.33333333333334" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Contains" OutputArgument="Value" Result="[VerificationResult]" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+        <uta:VerifyControlAttribute.ActivityToTest>
+          <ActivityAction>
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'BUTTON  javascript:void...'" sap:VirtualizedContainerService.HintSize="334,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9df7ce73-bf76-4b9f-b9d1-c7ff02fd3860" InformativeScreenshot="440e983dd941d88a54013faa7fe1924c" Selector="&lt;html app='chrome.exe' title='Houston Aviation - NEW VER' /&gt;&lt;webctrl parentid='nav-YTD' tag='BUTTON' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:Object">
+                  <VariableReference x:TypeArguments="x:Object">
+                    <VariableReference.Variable>
+                      <Variable x:TypeArguments="x:Object" x:Name="__ReferenceID0" Name="_autogenerated_Value" />
+                    </VariableReference.Variable>
+                  </VariableReference>
+                </OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+          </ActivityAction>
+        </uta:VerifyControlAttribute.ActivityToTest>
+        <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+          <ActivityFunc x:TypeArguments="x:Object">
+            <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_4">
+              <uta:ArgumentsBridge.Input>
+                <InArgument x:TypeArguments="x:Object">
+                  <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                </InArgument>
+              </uta:ArgumentsBridge.Input>
+            </uta:ArgumentsBridge>
+          </ActivityFunc>
+        </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+        <uta:VerifyControlAttribute.Expression>
+          <InArgument x:TypeArguments="x:String">["CREATE NEW QUOTE"]</InArgument>
+        </uta:VerifyControlAttribute.Expression>
+      </uta:VerifyControlAttribute>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="534,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[VerificationResult]" />
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Underwriter Name",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "lfw4spMlw0SBZxtGigh3aA",
+  "Reference": "H4z47meBBEGgAL5h77tv3Q/lfw4spMlw0SBZxtGigh3aA",
+  "ParentRef": "H4z47meBBEGgAL5h77tv3Q/i-ei9stN50-0HGci7YW9fw",
+  "Created": "2024-05-09T19:14:09.0374593Z",
+  "Updated": "2024-05-09T19:14:09.0374593Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
